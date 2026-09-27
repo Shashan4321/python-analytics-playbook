@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-analytics-playbook"
+version = "1.0.0"
+description = "Tested, reusable Python patterns for business analytics: pandas at scale, Polars and DuckDB, KPIs, data quality, ETL and Excel MIS automation."
+authors = [{ name = "Shashank Singh" }]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas>=2.2",
+    "numpy>=1.26",
+    "polars>=1.0",
+    "duckdb>=1.1",
+    "pandera>=0.24",
+    "pyarrow>=15",
+    "openpyxl>=3.1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "PD"]
+# unstack/stack are the clearest tools for cohort matrices; keep them.
+ignore = ["PD010", "PD013"]
