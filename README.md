@@ -1,6 +1,6 @@
 # Python Analytics Playbook
 
-[![CI](https://github.com/Shashan4321/python-notes/actions/workflows/ci.yml/badge.svg)](https://github.com/Shashan4321/python-notes/actions/workflows/ci.yml)
+[![CI](https://github.com/Shashan4321/python-analytics-playbook/actions/workflows/ci.yml/badge.svg)](https://github.com/Shashan4321/python-analytics-playbook/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/Python-3.11%20%7C%203.12-3776AB?logo=python&logoColor=white)
 ![pandas](https://img.shields.io/badge/pandas-2.2%2B%20%2F%203.0-150458?logo=pandas)
 ![Polars](https://img.shields.io/badge/Polars-1.x-CD792C)
@@ -47,8 +47,8 @@ The last row is deliberate: querying a DataFrame converts it on every call. Load
 ## Quick start
 
 ```bash
-git clone https://github.com/Shashan4321/python-notes.git
-cd python-notes
+git clone https://github.com/Shashan4321/python-analytics-playbook.git
+cd python-analytics-playbook
 python -m venv .venv
 .venv\Scripts\activate            # Windows  (macOS/Linux: source .venv/bin/activate)
 pip install -r requirements-dev.txt
