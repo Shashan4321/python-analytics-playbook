@@ -1,4 +1,12 @@
-# Python**
+# Python learning notes
+
+> **What this is:** personal notes from when I started learning Python (IDLE vs script mode, Jupyter setup, basics). I keep them public as a record of the learning journey.
+>
+> **For my production Python work** (tests, CI, typed code), see [nl-to-sql-analytics-agent](https://github.com/Shashan4321/nl-to-sql-analytics-agent), [erp-migration-toolkit-ax-to-d365](https://github.com/Shashan4321/erp-migration-toolkit-ax-to-d365), [ai-report-automation](https://github.com/Shashan4321/ai-report-automation) and [sales-intelligence-powerbi](https://github.com/Shashan4321/sales-intelligence-powerbi).
+
+---
+
+## Python
 **Difference between Python Shell(Interactive mode) VS Script Mode(Editor Window)?****
 =Both(**IDLE**)are the python interpretor to run the code
 
